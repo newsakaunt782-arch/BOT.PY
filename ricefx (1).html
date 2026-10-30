@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RICE FX — Trading kursi</title>
+<style>
+:root{box-sizing:border-box;--bg:#05070d;--card:#0e1320;--tx:#eef2ff;--mut:#9aa6c4;--a:#00e0a4;--b:#3d7bff;--line:#1c2540;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+body{background:#05070d;color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;opacity:.45}
+main,footer,nav{position:relative;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;max-width:1200px;margin:auto}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:1px}
+.logo svg{width:38px;height:38px}
+.logo b{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-block;padding:14px 28px;border-radius:12px;font-weight:700;text-decoration:none;color:#031018;background:linear-gradient(90deg,var(--a),var(--b));box-shadow:0 0 30px #00e0a455;transition:transform .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn.o{background:none;color:var(--tx);border:1px solid var(--line);box-shadow:none}
+section{max-width:1200px;margin:auto;padding:70px 5vw}
+.hero{text-align:center;padding-top:80px}
+.tag{display:inline-block;padding:6px 16px;border:1px solid var(--a);color:var(--a);border-radius:99px;font-size:13px;letter-spacing:2px;margin-bottom:22px}
+h1{font-size:clamp(38px,8vw,88px);line-height:1.05;font-weight:900}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:640px;margin:22px auto 32px;color:var(--mut);font-size:clamp(16px,2.2vw,20px)}
+.row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+h2{font-size:clamp(28px,5vw,46px);text-align:center;margin-bottom:12px}
+.sub{text-align:center;color:var(--mut);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.3s}
+.card:hover{border-color:var(--a);transform:translateY(-6px);box-shadow:0 10px 40px #00e0a422}
+.stat{text-align:center}
+.stat strong{display:block;font-size:clamp(40px,6vw,64px);font-weight:900;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.card h3{margin-bottom:8px}
+.card p,.card li{color:var(--mut);font-size:15px}
+.card ul{padding-left:18px}
+.plan.pop{border-color:var(--a);box-shadow:0 0 50px #00e0a433}
+.plan .p{font-size:15px;color:var(--a);font-weight:700;margin:10px 0 14px}
+.plan .btn{margin-top:18px;width:100%;text-align:center}
+.contact{text-align:center}
+.contact .tel{display:block;font-size:clamp(26px,5vw,44px);font-weight:900;color:var(--tx);text-decoration:none;margin:8px 0}
+.contact .tel:hover{color:var(--a)}
+footer{text-align:center;padding:40px 5vw 60px;border-top:1px solid var(--line)}
+footer .row{margin:18px 0}
+footer small{display:block;color:var(--mut);max-width:760px;margin:20px auto 0;font-size:12px}
+.rv{opacity:0;transform:translateY(30px);transition:1s}
+.rv.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<nav>
+ <div class="logo"><svg viewBox="0 0 40 40"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#00e0a4"/><stop offset="1" stop-color="#3d7bff"/></linearGradient></defs><rect x="2" y="2" width="36" height="36" rx="9" fill="none" stroke="url(#g)" stroke-width="2.5"/><path d="M9 29 L16 20 L22 25 L31 11" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>RICE <b>FX</b></div>
+ <a class="btn" href="#aloqa">Bog'lanish</a>
+</nav>
+<main>
+<section class="hero">
+ <span class="tag">8 YILLIK TAJRIBA</span>
+ <h1>Trading'ni <span>professional</span> darajada o'rganing</h1>
+ <p>RICE FX — 8 yildan beri bozorda. 100+ strategiya, aniq tizim va premium kurs: noldan professionalgacha.</p>
+ <div class="row"><a class="btn" href="#narx">Premium tariflar</a><a class="btn o" href="#kurs">Kurs dasturi</a></div>
+</section>
+
+<section>
+ <div class="grid">
+  <div class="card stat rv"><strong data-n="8">0</strong>yillik tajriba</div>
+  <div class="card stat rv"><strong data-n="100" data-s="+">0</strong>trading strategiya</div>
+  <div class="card stat rv"><strong>24/7</strong>onlayn qo'llab-quvvatlash</div>
+ </div>
+</section>
+
+<section id="kurs">
+ <h2 class="rv">Kurs <span style="color:var(--a)">dasturi</span></h2>
+ <p class="sub rv">Bosqichma-bosqich, amaliyotga asoslangan ta'lim</p>
+ <div class="grid">
+  <div class="card rv"><h3>01 · Asoslar</h3><p>Bozor tuzilishi, valyuta juftliklari, platforma va birinchi savdolar.</p></div>
+  <div class="card rv"><h3>02 · Texnik tahlil</h3><p>Grafik, daraja, trend, shamlar va indikatorlar bilan ishlash.</p></div>
+  <div class="card rv"><h3>03 · 100+ strategiya</h3><p>Skalping, intraday va swing — turli bozor sharoitlari uchun tayyor tizimlar.</p></div>
+  <div class="card rv"><h3>04 · Risk va psixologiya</h3><p>Kapitalni boshqarish, intizom va nazorat — barqarorlik asosi.</p></div>
+ </div>
+ <div class="contact rv" style="margin-top:50px">
+  <p class="sub" style="margin-bottom:8px">Kursga yozilish uchun qo'ng'iroq qiling:</p>
+  <a class="tel" href="tel:+998885420717">+998 88 542 07 17</a>
+  <a class="tel" href="tel:+9981735551">+9981735551</a>
+ </div>
+</section>
+
+<section id="narx">
+ <h2 class="rv">Premium <span style="color:var(--a)">tariflar</span></h2>
+ <p class="sub rv">Narxlar bo'yicha aniq ma'lumot uchun bog'laning</p>
+ <div class="grid">
+  <div class="card plan rv"><h3>START</h3><div class="p">Boshlovchilar uchun</div><ul><li>Asosiy video darslar</li><li>Boshlang'ich strategiyalar</li><li>Telegram guruh</li></ul><a class="btn o" href="#aloqa">Narxni bilish</a></div>
+  <div class="card plan pop rv"><h3>PRO ★</h3><div class="p">Eng ommabop</div><ul><li>Barcha 100+ strategiya</li><li>Jonli tahlil va savdolar</li><li>Shaxsiy savol-javob</li></ul><a class="btn" href="#aloqa">Narxni bilish</a></div>
+  <div class="card plan rv"><h3>VIP</h3><div class="p">To'liq premium</div><ul><li>Yakkama-yakka mentorlik</li><li>Shaxsiy savdo rejasi</li><li>Doimiy qo'llab-quvvatlash</li></ul><a class="btn o" href="#aloqa">Narxni bilish</a></div>
+ </div>
+</section>
+
+<section id="aloqa" class="contact">
+ <h2 class="rv">Hoziroq <span style="color:var(--a)">boshlang</span></h2>
+ <p class="sub rv">Bizga qo'ng'iroq qiling yoki yozing</p>
+ <a class="tel rv" href="tel:+998885420717">+998 88 542 07 17</a>
+ <a class="tel rv" href="tel:+9981735551">+9981735551</a>
+</section>
+</main>
+
+<footer>
+ <div class="logo" style="justify-content:center">RICE <b>FX</b></div>
+ <div class="row">
+  <a class="btn o" href="https://www.youtube.com/@RICE_FX" target="_blank" rel="noopener">YouTube</a>
+  <a class="btn o" href="https://t.me/risefx_trade" target="_blank" rel="noopener">Telegram</a>
+  <a class="btn o" href="https://www.instagram.com/tillo_risecomfx?stkn=MWcwdG9tdzM3eWFmMg==" target="_blank" rel="noopener">Instagram</a>
+ </div>
+ <small>Risk haqida ogohlantirish: forex va CFD savdosi yuqori risk bilan bog'liq va kapitalingizni yo'qotishingiz mumkin. Ushbu sayt moliyaviy maslahat emas va foyda kafolatlanmaydi.</small>
+</footer>
+
+<script>
+const c=document.getElementById('bg'),x=c.getContext('2d');let W,H,cs=[];
+function rs(){const d=window.devicePixelRatio||1;W=innerWidth;H=innerHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);cs=[];let p=H*.6;for(let i=0;i<Math.ceil(W/16)+2;i++){const o=p,cl=p+(Math.random()-.5)*40-1.5;p=cl;cs.push({o,c:cl,h:Math.random()*14,l:Math.random()*14})}}
+rs();addEventListener('resize',rs);
+let t=0;function dr(){x.clearRect(0,0,W,H);t++;if(t%40==0){const l=cs[cs.length-1].c,cl=l+(Math.random()-.5)*40-1.5;cs.shift();cs.push({o:l,c:cl,h:Math.random()*14,l:Math.random()*14});}
+let mn=1e9,mx=-1e9;cs.forEach(k=>{mn=Math.min(mn,k.o,k.c);mx=Math.max(mx,k.o,k.c)});const s=(H*.5)/Math.max(mx-mn,1);
+cs.forEach((k,i)=>{const X=i*16,Y=v=>H*.75-(v-mn)*s,up=k.c<k.o;x.strokeStyle=x.fillStyle=up?'#00e0a4':'#3d7bff';x.beginPath();x.moveTo(X+5,Y(Math.max(k.o,k.c))-k.h*s*.3);x.lineTo(X+5,Y(Math.min(k.o,k.c))+k.l*s*.3);x.stroke();x.fillRect(X+1,Math.min(Y(k.o),Y(k.c)),8,Math.max(2,Math.abs(Y(k.o)-Y(k.c))))});requestAnimationFrame(dr)}
+dr();
+const io=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('on');const n=i.target.querySelector('[data-n]');if(n&&!n.d){n.d=1;const T=+n.dataset.n,S=n.dataset.s||'';let v=0;const q=setInterval(()=>{v+=Math.ceil(T/40);if(v>=T){v=T;clearInterval(q)}n.textContent=v+S},30)}}}),{threshold:.2});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>

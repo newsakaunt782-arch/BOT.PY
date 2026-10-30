@@ -1,0 +1,9 @@
+BOT_TOKEN=8924637535:AAFzQv79onpBMAh_d_LlBelNS1R10kwTFqI
+ADMIN_IDS=6700790305
+FREE_CHANNEL_URL=https://t.me/risefx_trade
+VIP_CHANNEL_URL=https://t.me/@asliddin2109
+VIP_CHANNEL_ID=6700790305
+VIP_DAYS=30 DAYS 
+CONTACT_URL=https://@asliddin2109
+BONUS_URL=https://client-lc.born2trade.com/links/go/14
+
